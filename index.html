@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Manish Trader</title>
+
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background: #0f172a;
+            color: white;
+            text-align: center;
+        }
+
+        .container {
+            padding: 50px 15px 120px;
+        }
+
+        h1 {
+            font-size: 32px;
+            color: #22c55e;
+        }
+
+        .highlight {
+            font-size: 18px;
+            margin: 10px 0;
+            color: #facc15;
+        }
+
+        .points {
+            margin: 20px 0;
+            font-size: 16px;
+            line-height: 1.6;
+        }
+
+        /* Bottom Fixed Bar */
+        .bottom-bar {
+            position: fixed;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            background: #020617;
+            padding: 10px;
+            box-shadow: 0 -2px 10px rgba(0,0,0,0.5);
+        }
+
+        .timer {
+            font-size: 16px;
+            color: #ff4444;
+            margin-bottom: 5px;
+        }
+
+        .btn {
+            display: block;
+            width: 90%;
+            margin: auto;
+            padding: 14px;
+            background: #25D366;
+            color: white;
+            font-size: 18px;
+            text-decoration: none;
+            border-radius: 8px;
+            font-weight: bold;
+        }
+
+        .proof {
+            margin-top: 20px;
+            font-size: 14px;
+            color: #cbd5f5;
+        }
+    </style>
+</head>
+
+<body>
+
+<div class="container">
+
+    <h1>Manish Trader</h1>
+
+    <div class="highlight">
+        1000+ Members Joined & Growing 🚀
+    </div>
+
+    <div class="points">
+        ✔ Loss Recovery Guidance 📈 <br>
+        ✔ Daily Trading Support 💬 <br>
+        ✔ Beginner Friendly Tips 🔰 <br>
+        ✔ Live Market Updates ⏰ <br>
+    </div>
+
+    <div class="highlight">
+        Join Fast – Limited Slots ⏳
+    </div>
+
+    <div class="proof">
+        Trusted by 1000+ Traders 💯 <br>
+        *Trading involves risk. Results may vary.
+    </div>
+
+</div>
+
+<!-- Bottom Sticky Section -->
+<div class="bottom-bar">
+
+    <div class="timer">
+        Redirecting in <span id="count">5</span> sec...
+    </div>
+
+    <a class="btn" href="https://wa.me/918376998602?text=Hello%20Manish%20Trader%2C%20I%20want%20to%20join">
+        Message Now on WhatsApp
+    </a>
+
+</div>
+
+<script>
+    let time = 5;
+    let count = document.getElementById("count");
+
+    let timer = setInterval(() => {
+        time--;
+        count.innerText = time;
+
+        if(time <= 0){
+            clearInterval(timer);
+            window.location.href = "https://wa.me/918376998602?text=Hello%20Manish%20Trader%2C%20I%20want%20to%20join";
+        }
+    }, 1000);
+</script>
+
+</body>
+</html>
