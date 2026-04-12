@@ -1,9 +1,31 @@
+```html
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Manish Trader</title>
+
+    <!-- Meta Pixel Code -->
+    <script>
+    !function(f,b,e,v,n,t,s)
+    {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+    n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+    if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+    n.queue=[];t=b.createElement(e);t.async=!0;
+    t.src=v;s=b.getElementsByTagName(e)[0];
+    s.parentNode.insertBefore(t,s)}(window, document,'script',
+    'https://connect.facebook.net/en_US/fbevents.js');
+
+    fbq('init', '973920251864361');
+    fbq('track', 'PageView');
+    </script>
+
+    <noscript>
+        <img height="1" width="1" style="display:none"
+        src="https://www.facebook.com/tr?id=973920251864361&ev=PageView&noscript=1"/>
+    </noscript>
+    <!-- End Meta Pixel Code -->
 
     <style>
         body {
@@ -35,7 +57,6 @@
             line-height: 1.6;
         }
 
-        /* Bottom Fixed Bar */
         .bottom-bar {
             position: fixed;
             bottom: 0;
@@ -110,7 +131,9 @@
         Redirecting in <span id="count">5</span> sec...
     </div>
 
-    <a class="btn" href="https://wa.me/918376998602?text=MANISH%20BHAI%20LOSS%20RECOVERY%20KARA%20DO">
+    <a class="btn"
+       onclick="fbq('track', 'Lead');"
+       href="https://wa.me/918376998602?text=MANISH%20BHAI%20LOSS%20RECOVERY%20KARA%20DO">
         Message Now on WhatsApp
     </a>
 
@@ -133,3 +156,4 @@
 
 </body>
 </html>
+```
