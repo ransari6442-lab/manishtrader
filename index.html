@@ -1,4 +1,3 @@
-```html
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -68,12 +67,6 @@
             text-align: center;
         }
 
-        .timer {
-            font-size: 16px;
-            color: #ff4444;
-            margin-bottom: 8px;
-        }
-
         .btn {
             display: block;
             width: 260px;
@@ -127,10 +120,6 @@
 <!-- Bottom Sticky Section -->
 <div class="bottom-bar">
 
-    <div class="timer">
-        Redirecting in <span id="count">5</span> sec...
-    </div>
-
     <a class="btn"
        onclick="fbq('track', 'Lead');"
        href="https://wa.me/918376998602?text=MANISH%20BHAI%20LOSS%20RECOVERY%20KARA%20DO">
@@ -139,21 +128,5 @@
 
 </div>
 
-<script>
-    let time = 5;
-    let count = document.getElementById("count");
-
-    let timer = setInterval(() => {
-        time--;
-        count.innerText = time;
-
-        if(time <= 0){
-            clearInterval(timer);
-            window.location.href = "https://wa.me/918376998602?text=MANISH%20BHAI%20LOSS%20RECOVERY%20KARA%20DO";
-        }
-    }, 1000);
-</script>
-
 </body>
 </html>
-```
