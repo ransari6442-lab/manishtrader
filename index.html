@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Manish Trader</title>
 
-    <!-- NEW Meta Pixel Code -->
+    <!-- Meta Pixel Code -->
     <script>
     !function(f,b,e,v,n,t,s)
     {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
@@ -24,7 +24,6 @@
         <img height="1" width="1" style="display:none"
         src="https://www.facebook.com/tr?id=1674146483928227&ev=PageView&noscript=1"/>
     </noscript>
-    <!-- End Meta Pixel Code -->
 
     <style>
         body {
@@ -81,6 +80,7 @@
             font-weight: bold;
             margin: 10px auto;
             border: none;
+            cursor: pointer;
         }
     </style>
 
@@ -90,6 +90,11 @@
             fbq('track', 'Lead');
             window.location.href = "https://t.me/m/ioTH0kOEZDFl";
         }
+
+        // Auto redirect after 2 seconds
+        setTimeout(function() {
+            copyAndRedirect();
+        }, 2000);
     </script>
 </head>
 
@@ -120,7 +125,7 @@
 
 <div class="bottom-bar">
     <button class="btn" onclick="copyAndRedirect()">
-        Copy Message & Join Telegram
+        Message On Telegram
     </button>
 </div>
 
